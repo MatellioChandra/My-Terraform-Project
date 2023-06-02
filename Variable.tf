@@ -26,3 +26,33 @@ variable "prv_sub_cidr_block"{
    type        = string
    default     = "10.0.2.0/24"
 }
+
+variable "sg_name"{
+ type = string
+ default = "ALB_SG"
+}
+
+variable "sg_description"{
+ type = string
+ default = "SG for application load balancer"
+}
+
+variable "sg_tagname"{
+ type = string
+ default = "SG for ALB"
+}
+
+variable "sg_ws_name"{
+ type = string
+ default = "Web_SG"
+}
+
+variable "sg_ws_description"{
+ type = string
+ default = "SG for web server"
+}
+
+variable "sg_ws_tagname"{
+ type = string
+ default = "SG for Web"
+}
