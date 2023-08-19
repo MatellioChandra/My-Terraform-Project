@@ -1,3 +1,8 @@
+variable "project_name"{
+ type = string
+  default = "My-Project"
+}
+
 variable "ami"{
  type = string
   default = "ami-02eb7a4783e7e9317"
@@ -56,3 +61,14 @@ variable "sg_ws_tagname"{
  type = string
  default = "SG for Web"
 }
+
+variable "image_id"{
+ type = string
+ default = "SG for Web"
+}
+
+variable "instance_type"{
+ type = string
+ default = "t2.micro"
+}
+

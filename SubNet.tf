@@ -21,3 +21,4 @@ resource "aws_subnet" "Pvt_SN" {
     Name = "Pvt_SN"
   }
 }
+

@@ -3,7 +3,7 @@ resource "aws_instance" "web_instance" {
   instance_type = "t2.micro"
   key_name      = var.keyname
 
-  subnet_id                   = aws_subnet.Pvt_SN.id
+  subnet_id                   = aws_subnet.Pub_SN.id
   vpc_security_group_ids      = [aws_security_group.Web_SG.id]
   associate_public_ip_address = true
 
